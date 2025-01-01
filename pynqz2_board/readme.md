@@ -54,6 +54,5 @@ Once your board is setup, to connect to Jupyter Notebooks open a web browser and
 If your board is configured correctly you will be presented with a login screen. 
 * The username is xilinx and the password is also xilinx.
 
-</br>
 <img src="https://github.com/user-attachments/assets/9bbbc444-1f6a-4af0-a1ae-db2c92ce2004" width=400>
 
