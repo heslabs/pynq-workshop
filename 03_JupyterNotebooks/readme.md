@@ -81,3 +81,29 @@ PYNQ is written in Python, which is the default kernel for Jupyter Notebook, and
   * To shutdown, delete, duplicate, or rename a notebook: check the checkbox next to it and an array of controls will appear at the top of the notebook list.
   * To see all of your running notebooks along with their directories, click on the "Running" tab.
 
+---
+### Notebook UI
+* If you create a new notebook or open an existing one, you will be taken to the notebook user interface (UI). The notebook UI has the following main areas:
+   * Menu
+   * Toolbar
+   * Notebook area and cells
+* Edit mode
+   * Edit mode is indicated by a green cell border and a prompt showing in the editor area:
+* Command mode
+   * Command mode is indicated by a grey cell border with a blue left margin.
+* Running Code
+   * Run a code cell using Shift-Enter or pressing the play button in the toolbar above. 
+
+---
+### Markdown
+
+* Text can be added to Jupyter Notebooks using Markdown cells. Markdown is a popular markup language that is a superset of HTML. Its specification can be found here:
+   * http://daringfireball.net/projects/markdown/ 
+* Markdown is a text-to-HTML conversion tool for web writers
+   * Markdown allows you to write using an easy-to-read, easy-to-write plain text format, then convert it to structurally valid XHTML (or HTML).
+* “Markdown” is two things
+   * A plain text formatting syntax
+   * A software tool, written in Perl, that converts the plain text formatting to HTML
+   * See the Syntax page for details pertaining to Markdown’s formatting syntax.
+* https://daringfireball.net/projects/markdown/ 
+
