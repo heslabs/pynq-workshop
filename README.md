@@ -1,7 +1,4 @@
-# PYNQ
-
----
-## AMD PYNQ
+# AMD PYNQ
 
 What is PYNQ? (https://www.pynq.io/)
 
