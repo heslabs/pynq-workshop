@@ -24,10 +24,11 @@ PYNQ can be used to create high performance applications with:
 | 02 | Getting Started with PYNQ-Z2 Board | lab |
 | 03 | Introduction to Jupyter Notebook | demo |
 | 04 | Jupyter Notebook Examples | lab |
-| 05 | Vitis Application Acceleration Development Flow | N/A |
-| 06 | Introduction to PYNQ Overlay Methodology | N/A |
-| 07 | PYNQ HLS Design Flow - FIR Filter | demo |
-| 08 | PYNQ Overlay Design Flow - FIR Filter | demo |
+| 05 | Vitis Application Acceleration Flow | N/A |
+| 06 | PYNQ Overlay Methodology | N/A |
+| 07 | PYNQ Overlay Examples | lab |
+| 08 | PYNQ HLS Flow Overview | demo |
+| 09 | PYNQ HLS Example - FIR Filter | demo |
 
 
 ---
