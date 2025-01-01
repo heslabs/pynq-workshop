@@ -77,7 +77,7 @@ fpga_hw_design = Overlay('./fpga_hw_design.bit')
 <img src="https://github.com/user-attachments/assets/699f8123-dbdf-4ba9-ad17-af444569473f" width=450>
 
 ---
-#### Image Resizer Example
+#### Hardware Accelerated Image Resizer Example
 
 <img src="https://github.com/user-attachments/assets/3c604d25-cf37-4b18-9a52-51099ee8d417" width=800>
 
