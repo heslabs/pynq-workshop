@@ -78,12 +78,11 @@ The Vitis build process follows a standard compilation and linking process for b
 * The host program is built using the GNU C++ compiler (g++) for Data Center applications or the GNU C++ Arm cross-compiler for Embedded Processor devices.
 * The FPGA binary is built using the Vitis compiler (v++). First the kernels are compiled into a AMD object (.xo) file. Then, the .xo files are linked with the hardware platform to generate the AMD device binary (.xclbin) file. 
 * As described in V++ Command, the Vitis compiler and linker accepts a wide range of options to tailor and optimize the results.
+* The Vitis build process follows a standard compilation and linking process for both the host program and the kernel code
 
 <br/>
 <img src="https://github.com/user-attachments/assets/12dcf42e-d712-41aa-85ac-47f9dc72cb8e" width=550>
 <br/>
-
-* The Vitis build process follows a standard compilation and linking process for both the host program and the kernel code
 
 ---
 ### Vitis Build Targets
