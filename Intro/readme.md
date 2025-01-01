@@ -58,10 +58,27 @@ The Jupyter Notebook is the original web application for creating and sharing co
 #### The Jupyter Notebook (Formerly known as the IPython Notebook)
 * The IPython Notebook is now known as the Jupyter Notebook. It is an interactive computational environment, in which you can combine code execution, rich text, mathematics, plots and rich media.
 
+
+---
+### Installing Software and Hardware with PIP
+* Enabled by new hybrid packages
+* Download a design from Github with a single Python command
+```
+pip install git+https://github.com/Xilinx/pynq-hellowprld.git
+```
+---
+<img src="https://github.com/user-attachments/assets/fd7e736d-a831-4082-ab06-323d4a9fb603" width=550>
+
+```
+from pynq import Overlay
+fpga_hw_design = Overlay('./fpga_hw_design.bit')
+```
+<img src="https://github.com/user-attachments/assets/9dbfaf35-0217-463f-a381-1cb838091815" width=450>
+<img src="https://github.com/user-attachments/assets/699f8123-dbdf-4ba9-ad17-af444569473f" width=450>
+
+
 ---
 ### Resoruce
-
-<img src="https://github.com/user-attachments/assets/776cfa16-bd32-4890-9148-f6568ddfde93" width=300>
 
 * pynq.io  
 * pynq.readthedocs.org  
