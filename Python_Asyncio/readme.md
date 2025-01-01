@@ -1,4 +1,10 @@
 
+---
+## Numpy Data Movement
+* Simple data movement code snippet that can be used to share data with programmable logic. 
+* Leverage the Python numpy package to manipulate the buffer on the Arm processors and can then send a buffer pointer to programmable logic for sharing data.
+* Asyncio Integration: PYNQ also leverages the Python asyncio module for communicating with programmable logic devices through events (namely interrupts).
+
 
 ---
 ## Asyncio Integration
