@@ -1,8 +1,8 @@
 
 ---
-## AMD Pervasive AI Developer Contest
+## AMD Pervasive AI Developer Contest 2023
 
-AMD Pervasive AI Developer Contest 2023 [[hackster.io]](https://www.hackster.io/contests/amd2023) [[pynq.io]](https://discuss.pynq.io/t/participation-in-amd-pervasive-ai-developer-contest/6556)
+Source: [[hackster.io]](https://www.hackster.io/contests/amd2023) [[pynq.io]](https://discuss.pynq.io/t/participation-in-amd-pervasive-ai-developer-contest/6556)
 
 * There are 3 categories to submit projects to:
     * Generative AI: Utilize AMD ROCm software on hardware like the AMD Instinct MI210 accelerator or Radeon PRO W7900.
