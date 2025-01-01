@@ -1,6 +1,24 @@
 # PYNQ
 
 ---
+## AMD PYNQ
+
+What is PYNQ? (https://www.pynq.io/)
+
+PYNQ™ is an open-source project from AMD® that makes it easier to use Adaptive Computing platforms.
+Using the Python language, Jupyter notebooks, and the huge ecosystem of Python libraries, designers can exploit the benefits of programmable logic and microprocessors to build more capable and exciting electronic systems.
+
+PYNQ can be used to create high performance applications with:
+* Parallel hardware execution
+* High frame-rate video processing
+* Hardware accelerated algorithms
+* Real-time signal processing
+* High bandwidth IO
+* Low latency control
+
+<img src ="https://github.com/user-attachments/assets/d3cde8d2-fdd3-478b-91cf-01680f49a462" width=450>
+
+---
 ## PYNQ-Z2 Tutorial Agenda
 
 | # | Training Module | Lab |
@@ -24,3 +42,12 @@
 
 ---
 <img src ="https://github.com/user-attachments/assets/ca5ebc4f-7bec-406a-a52e-76929720329d" width=800>
+
+---
+## Resoruce
+* AMD-PYNQ: What is PYNQ? (https://www.pynq.io/)
+* Github Xilinx/PYNQ: Python Productivity for ZYNQ [[Github]](https://github.com/Xilinx/PYNQ)
+* FINN: Fast, Scalable Quantized Neural Network Inference on FPGAs [[Github]](https://github.com/Xilinx/finn)
+* 2023 AMD Pervasive AI Developer Contest [[pynq.io]](https://discuss.pynq.io/t/participation-in-amd-pervasive-ai-developer-contest/6556 )
+* 2023 Pervasive AI Developer Contest with AMD [[hackster.io]](https://www.hackster.io/contests/amd2023)
+* Adaptive Computing Challenge 2021 [[hackster.io]](https://www.hackster.io/contests/xilinxadaptivecomputing2021)
