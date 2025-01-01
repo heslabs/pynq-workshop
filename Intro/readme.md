@@ -34,3 +34,37 @@
 ---
 ### Zynq in Embedded/Edge Applications
 <img src="https://github.com/user-attachments/assets/3e281905-3e8a-41e0-b1bc-387d5926240e" width=650>
+
+---
+### Jupyter
+* Free software, open standards, and web services for interactive computing across all programming languages
+* https://jupyter.org/
+
+#### JupyterLab: A Next-Generation Notebook Interface
+JupyterLab is the latest web-based interactive development environment for notebooks, code, and data. Its flexible interface allows users to configure and arrange workflows in data science, scientific computing, computational journalism, and machine learning. A modular design invites extensions to expand and enrich functionality.
+
+<img src="https://github.com/user-attachments/assets/0c9bec57-67c3-4171-87a7-e061ccf9d645" width=450>
+<img src="https://github.com/user-attachments/assets/f16bacda-d40e-4923-96e9-e5a67cd9c6d8" width=450>
+
+<br/><br/>
+#### Jupyter Notebook: The Classic Notebook Interface
+The Jupyter Notebook is the original web application for creating and sharing computational documents. It offers a simple, streamlined, document-centric experience.
+  
+---
+### PYNQ Jupyter Notebook
+<img src="https://github.com/user-attachments/assets/15b4db19-8bcd-47ca-8405-28a53f1f357f" width=350>
+
+
+#### The Jupyter Notebook (Formerly known as the IPython Notebook)
+* The IPython Notebook is now known as the Jupyter Notebook. It is an interactive computational environment, in which you can combine code execution, rich text, mathematics, plots and rich media.
+
+---
+### Resoruce
+
+<img src="https://github.com/user-attachments/assets/776cfa16-bd32-4890-9148-f6568ddfde93" width=300>
+
+* pynq.io  
+* pynq.readthedocs.org  
+* Github.com/Xilinx/PYNQ
+* tul.com.tw/ProductsPYNQ-Z2.html
+
