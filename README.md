@@ -42,9 +42,14 @@ PYNQ can be used to create high performance applications with:
 
 ---
 ## Resoruce
+
+#### Overview and Tutorials
 * AMD-PYNQ: What is PYNQ? (https://www.pynq.io/)
 * Github Xilinx/PYNQ: Python Productivity for ZYNQ [[Github]](https://github.com/Xilinx/PYNQ)
+* Github: PYNQ Workshop for v2.6 [[Github]](https://github.com/Xilinx/PYNQ_Workshop)
 * FINN: Fast, Scalable Quantized Neural Network Inference on FPGAs [[Github]](https://github.com/Xilinx/finn)
+
+#### Developer Contest
 * 2023 AMD Pervasive AI Developer Contest [[pynq.io]](https://discuss.pynq.io/t/participation-in-amd-pervasive-ai-developer-contest/6556 )
 * 2023 Pervasive AI Developer Contest with AMD [[hackster.io]](https://www.hackster.io/contests/amd2023)
 * Adaptive Computing Challenge 2021 [[hackster.io]](https://www.hackster.io/contests/xilinxadaptivecomputing2021)
