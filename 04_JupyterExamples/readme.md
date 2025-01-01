@@ -1,4 +1,4 @@
-# PYNQ-Z2 Jupyter Ecxamples
+# PYNQ-Z2 Jupyter Examples
 
 ---
 ## Buttons and LEDs Demonstration
@@ -74,4 +74,95 @@ for led in rgbled_position:
   * Step 4: Edge detection
   * Step 5: Canny edge detection
   * Step 6: Show results
+
+---
+### Applying OpenCV filters on Webcam input
+
+---
+#### Step 1: Specify webcam resolution
+```
+# camera (input) configuration
+frame_in_w = 640
+frame_in_h = 480
+```
+
+#### Step 2: Initialize camera from OpenCV
+```
+import os
+os.environ["OPENCV_LOG_LEVEL"]="SILENT"
+import cv2
+videoIn = cv2.VideoCapture(0)
+videoIn.set(cv2.CAP_PROP_FRAME_WIDTH, frame_in_w);
+videoIn.set(cv2.CAP_PROP_FRAME_HEIGHT, frame_in_h);
+print("capture device is open: " + str(videoIn.isOpened()))
+```
+
+#### Step 3: Send webcam input to HDMI output
+```
+import os
+os.environ["OPENCV_LOG_LEVEL"]="SILENT"
+import cv2
+videoIn = cv2.VideoCapture(0)
+videoIn.set(cv2.CAP_PROP_FRAME_WIDTH, frame_in_w);
+videoIn.set(cv2.CAP_PROP_FRAME_HEIGHT, frame_in_h);
+print("capture device is open: " + str(videoIn.isOpened()))
+```
+
+#### Step 4: Edge detection
+```
+import time
+num_frames = 20
+readError = 0
+start = time.time()
+for i in range (num_frames):   
+    # read next image
+    ret, frame_vga = videoIn.read()
+    if (ret):
+        outframe = hdmi_out.newframe()
+        laplacian_frame = cv2.Laplacian(frame_vga, cv2.CV_8U, dst=outframe)
+        hdmi_out.writeframe(outframe)
+    else:
+        readError += 1
+end = time.time()
+print("Frames per second: " + str((num_frames-readError) / (end - start)))
+print("Number of read errors: " + str(readError))
+```
+
+#### Step 5: Canny edge detection
+```
+num_frames = 20
+Mode = VideoMode(640,480,8)
+hdmi_out = base.video.hdmi_out
+hdmi_out.configure(Mode,PIXEL_GRAY)
+hdmi_out.start()
+start = time.time()
+for i in range (num_frames):
+    # read next image
+    ret, frame_webcam = videoIn.read()
+    if (ret):
+        outframe = hdmi_out.newframe()
+        cv2.Canny(frame_webcam, 100, 110, edges=outframe)
+        hdmi_out.writeframe(outframe)
+    else:
+        readError += 1
+end = time.time()
+print("Frames per second: " + str((num_frames-readError) / (end - start)))
+print("Number of read errors: " + str(readError))
+```
+
+#### Step 6: Show results
+```
+%matplotlib inline 
+from matplotlib import pyplot as plt
+import numpy as np
+
+frame_canny = cv2.Canny(frame_webcam, 100, 110)
+plt.figure(1, figsize=(10, 10))
+frame_vga = np.zeros((480,640,3)).astype(np.uint8)
+frame_vga[:,:,0] = frame_canny
+frame_vga[:,:,1] = frame_canny
+frame_vga[:,:,2] = frame_canny
+plt.imshow(frame_vga)
+plt.show()
+```
 
