@@ -32,10 +32,12 @@ $ sudo nmcli dev wifi connect LABS password arm12345
 
 [device]
 wifi.scan-rand-mac-address=no
+```
 
+```
 sudo systemctl restart NetworkManager
-
 sudo nmcli dev wifi connect "SSID" password "wifipassword"
+```
 
 ```
 $ sudo nmcli dev wifi rescan
@@ -49,6 +51,7 @@ IN-USE  BSSID  SSID  MODE  CHAN  RATE  SIGNAL  BARS  SECURITY
 
 ---
 ### wifi settings
+
 ```
 auto wlan0
 allow-hotplug wlan0
