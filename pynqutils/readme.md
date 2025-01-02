@@ -1,5 +1,44 @@
 # PYNQ Utilitis
 
+
+---
+### Convert a IPython Notebook into a Python file via commandline?
+[[Link]](https://stackoverflow.com/questions/17077494/how-do-i-convert-a-ipython-notebook-into-a-python-file-via-commandline)
+
+```
+$ jupyter nbconvert --to ex.py example.ipynb
+$ jupyter nbconvert mynotebook.ipynb --to python
+```
+
+```
+xilinx@pynq:
+$ cd ~/jupyter_notebooks/labs/firhls_pass
+$ jupyter nbconvert --to ex.py firhls.ipynb
+$ jupyter nbconvert firhls.ipynb --to python
+```
+
+* you can even call the above command in an IPython notebook by pre-pending ! (used for any command line argument). Inside a notebook:
+```
+!jupyter nbconvert --to script config_template.ipynb
+```
+
+---
+### ipynb-py-convert
+
+My search took me to ipynb-py-convert
+
+By following below steps I was able to get .py file
+```
+Install "pip install ipynb-py-convert"
+```
+Go to the directory where the ipynb file is saved via command prompt
+Enter the command
+```
+$ ipynb-py-convert YourFileName.ipynb YourFilename.py
+$ ipynb-py-convert firhls.ipynb test.py
+```
+
+
 ---
 ### Ubuntu 22.04
 ```
