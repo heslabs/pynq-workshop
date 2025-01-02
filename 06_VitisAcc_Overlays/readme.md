@@ -82,7 +82,7 @@ This tutorial is primarily designed to demonstrate the final two points
 * Developing a driver, and finally building a more complex system from multiple IP blocks. 
 
 ---
-#### Developing a Single IP
+### Developing a Single IP
 For this first example we are going to use a simple design with a single IP contained in it. This IP was developed using HLS and adds two 32-bit integers together. The full code for the accelerator is:
 
 ```
@@ -139,7 +139,7 @@ add_ip.write(0x18, 5)
 add_ip.read(0x20)
 ```
 ---
-#### Creating a Driver
+### Creating a Driver
 
 While the DefaultIP driver is useful for determining that the IP is working it is not the most user-friendly API to expose to the eventual end-users of the overlay. Ideally we want to create an IP-specific driver exposing a single add function to call the accelerator. Custom drivers are created by inheriting from DefaultIP and adding a bindto class attribute consisting of the IP types the driver should bind to. The constructor of the class should take a single description parameter and pass it through to the super class __init__. The description is a dictionary containing the address map and any interrupts and GPIO pins connected to the IP.
 
