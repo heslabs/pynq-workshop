@@ -1,7 +1,14 @@
 # PYNQ Utilitis
 
 ---
-## PYNQ-Z2 Wifi settings
+### Ubuntu 22.04
+```
+xilinx@192.168.52.13's password: 
+Welcome to PYNQ Linux, based on Ubuntu 22.04 (GNU/Linux 5.15.19-xilinx-v2022.1 armv7l)
+```
+
+---
+### PYNQ-Z2 Wifi settings
 
 ```
 # wifi.py
@@ -19,6 +26,25 @@ $ sudo apt-get install network-manager
 $ sudo nmcli dev wifi connect <SSID> password <PASSWD>
 $ sudo nmcli dev wifi connect SOCLABS password Call6576886
 $ sudo nmcli dev wifi connect LABS password arm12345
+```
+```
+/etc/NetworkManager/NetworkManager.conf
+
+[device]
+wifi.scan-rand-mac-address=no
+
+sudo systemctl restart NetworkManager
+
+sudo nmcli dev wifi connect "SSID" password "wifipassword"
+
+```
+$ sudo nmcli dev wifi rescan
+Error: Scanning not allowed while unavailable.
+```
+
+```
+sudo nmcli dev wifi list
+IN-USE  BSSID  SSID  MODE  CHAN  RATE  SIGNAL  BARS  SECURITY 
 ```
 
 ---
