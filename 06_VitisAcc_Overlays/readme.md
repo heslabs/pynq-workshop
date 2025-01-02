@@ -61,7 +61,7 @@ ol = Overlay("base.bit") # hwh is parsed here
 ---
 ### Existing Overlays
 * Existing overlays can be used as a starting point to create a new overlay.
-* The base overlay can be found in the boards directory in the PYNQ repository, and includes reference IP for peripherals on the board:
+* The **base overlay** can be found in the boards directory in the PYNQ repository, and includes reference IP for peripherals on the board:
 ```
 <PYNQ repository>/boards/<board>/base
 ```
@@ -75,7 +75,7 @@ ol = Overlay("base.bit") # hwh is parsed here
 ## Overlay Tutorial
 * [[overlay_tutorial.ipynb]](https://github.com/Xilinx/PYNQ/blob/v3.0.1/docs/source/overlay_design_methodology/overlay_tutorial.ipynb)
 
-This notebook gives an overview of how the Overlay class should be used efficiently. The redesigned Overlay class has three main design goals
+This **notebook** gives an overview of how the **Overlay class** should be used efficiently. The redesigned Overlay class has three main design goals
 * Allow overlay users to find out what is inside an overlay in a consistent manner
 * Provide a simple way for developers of new hardware designs to test new IP
 * Facilitate reuse of IP between Overlays
