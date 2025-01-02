@@ -6,7 +6,16 @@
 	* Overlay Tutorial v3.0.1 [[Github]](https://github.com/Xilinx/PYNQ/blob/v3.0.1/docs/source/overlay_design_methodology/overlay_tutorial.ipynb)
 * pynq.readthedocs.io
 	* PYNQ v2.1 - PYNQ Overlays [[readthedocs.io]](https://pynq.readthedocs.io/en/v2.1/pynq_overlays.html)
-  
+
+---
+## PYNQ OVerlays
+* The Xilinx® Zynq® All Programmable device is an SOC based on a dual-core ARM® Cortex®-A9 processor (referred to as the Processing System or **PS**), integrated with FPGA fabric (referred to as Programmable Logic or **PL**).
+* The **PS** subsystem includes a number of dedicated peripherals (memory controllers, USB, Uart, IIC, SPI etc) and can be extended with additional hardware IP in a **PL Overlay**.
+* **Overlays**, or **hardware libraries**, are programmable/configurable FPGA designs that extend the user application from the Processing System of the Zynq into the Programmable Logic.
+* Overlays can be used to **accelerate a software application**, or to customize the hardware platform for a particular application.
+
+<img src="https://github.com/user-attachments/assets/8d750f74-0313-4d45-a621-96a8f08273d9" width=650>
+
 ---
 ## Overlay Design 
 
