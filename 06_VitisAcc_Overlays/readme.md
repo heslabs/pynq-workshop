@@ -42,6 +42,7 @@ There are a number of components required in the process of creating an overlay:
 
 ---
 ## Overlay Design 
+https://github.com/Xilinx/PYNQ/blob/v3.0.1/docs/source/overlay_design_methodology/overlay_design.rst
 
 * An overlay consists of two main parts; the **PL design (bitstream)** and the **project HWH file**.
 * Overlay design is a specialized task for hardware engineers.
@@ -76,7 +77,7 @@ ol = Overlay("base.bit") # hwh is parsed here
 ```
 
 ---
-## Programmability
+### Programmability
 * An overlay should have **post-bitstream** programmability to allow customization of the system
 * A number of reusable PYNQ IP blocks are available to support programmability
     * For example, a **PYNQ MicroBlaze** can be used on Pmod, and Arduino interfaces
