@@ -155,9 +155,11 @@ Expected log message:
 ---
 ### Creating a Driver
 
-* While the DefaultIP driver is useful for determining that the IP is working it is not the most user-friendly API to expose to the eventual end-users of the overlay. Ideally we want to create an IP-specific driver exposing a single add function to call the accelerator.
-* Custom drivers are created by inheriting from DefaultIP and adding a bindto class attribute consisting of the IP types the driver should bind to
-* The constructor of the class should take a single description parameter and pass it through to the super class __init__. The description is a dictionary containing the address map and any interrupts and GPIO pins connected to the IP.
+* While the **DefaultIP driver** is useful for determining that the IP is working it is not the most user-friendly API to expose to the eventual end-users of the overlay.
+* Ideally we want to create an **IP-specific driver** exposing a single add function to call the accelerator.
+* **Custom drivers** are created by inheriting from DefaultIP and adding a **bindto class attribute** consisting of the IP types the driver should bind to
+* The constructor of the class should take a single description parameter and pass it through to the super class __init__.
+* The description is a dictionary containing the **address map** and any **interrupts** and **GPIO pins** connected to the IP.
 
 ```
 from pynq import DefaultIP
@@ -173,7 +175,7 @@ class AddDriver(DefaultIP):
         return self.read(0x20)
 ```
 
-And we can access the same way as before except now our custom driver with an add function is created instead of DefaultIP
+And we can access the same way as before except now our **custom driver** with an add function is created instead of DefaultIP
 ```
 overlay.scalar_add.add(15,20)
 ```
