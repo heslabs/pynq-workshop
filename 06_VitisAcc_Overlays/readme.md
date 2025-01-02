@@ -105,6 +105,18 @@ ol = Overlay("base.bit") # hwh is parsed here
 ```
 
 ---
+### Python Overlay API
+https://github.com/Xilinx/PYNQ/blob/v3.0.1/docs/source/overlay_design_methodology/python_overlay_api.rst
+
+* The Python API is the user interface for the overlay, exposing the programmable functionality in the design.
+* An API for a PYNQ overlay can consist of
+	* a simple **Python wrapper** that interfaces directly with the hardware IP blocks in the overlay
+	* a more substantial **Python layer** utilising other Python packages
+	* a **Python library** that interfaces to a lower level higher performance library (written in C/C++ for example) to control the overlay
+* The API for an overlay will manage the **transfer of data between the Python environment in the PS**, and the **overlay in the PL**.
+* This may be the transfer of data directly from the PS to a peripheral or managing system memory to allow a peripheral in the PL to **read or write data from DRAM** that can also be accessed from the Python environment.
+
+---
 ## Overlay Tutorial
 * [[overlay_tutorial.ipynb]](https://github.com/Xilinx/PYNQ/blob/v3.0.1/docs/source/overlay_design_methodology/overlay_tutorial.ipynb)
 
