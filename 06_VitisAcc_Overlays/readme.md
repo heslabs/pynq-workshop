@@ -9,12 +9,36 @@
 
 ---
 ## PYNQ OVerlays
-* The Xilinx® Zynq® All Programmable device is an SOC based on a dual-core ARM® Cortex®-A9 processor (referred to as the Processing System or **PS**), integrated with FPGA fabric (referred to as Programmable Logic or **PL**).
+https://pynq.readthedocs.io/en/v2.1/pynq_overlays.html
+
+* The **Xilinx® Zynq®** All Programmable device is an SOC based on a dual-core ARM® Cortex®-A9 processor (referred to as the Processing System or **PS**), integrated with FPGA fabric (referred to as Programmable Logic or **PL**).
 * The **PS** subsystem includes a number of dedicated peripherals (memory controllers, USB, Uart, IIC, SPI etc) and can be extended with additional hardware IP in a **PL Overlay**.
 * **Overlays**, or **hardware libraries**, are programmable/configurable FPGA designs that extend the user application from the Processing System of the Zynq into the Programmable Logic.
 * Overlays can be used to **accelerate a software application**, or to customize the hardware platform for a particular application.
 
-<img src="https://github.com/user-attachments/assets/8d750f74-0313-4d45-a621-96a8f08273d9" width=650>
+<br/>
+<img src="https://github.com/user-attachments/assets/8d750f74-0313-4d45-a621-96a8f08273d9" width=600>
+
+
+---
+## Overlay Design Methodology
+https://pynq.readthedocs.io/en/v2.1/overlay_design_methodology.html
+
+* Overlays are analogous to software libraries. A programmer can download **overlays** into the **Zynq® PL** at runtime to provide functionality required by the software application.
+* An overlay is a **class of Programmable Logic design**. Programmable Logic designs are usually highly optimized for a specific task.
+* Overlays are designed to be configurable, and reusable for broad set of applications.
+* A **PYNQ overlay** will have a **Python interface**, allowing a software programmer to use it like any other Python package.
+* A software programmer can **use an overlay**, but will not usually **create overlay**, as this usually requires a high degree of hardware design expertise.
+
+There are a number of components required in the process of creating an overlay:
+* Board Settings
+* PS-PL Interface
+* MicroBlaze Soft Processors
+* Python/C Integration
+* Python AsyncIO
+* Python Overlay API
+* Python Packaging
+ 
 
 ---
 ## Overlay Design 
