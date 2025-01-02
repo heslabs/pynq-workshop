@@ -22,7 +22,37 @@ $ sudo nmcli dev wifi connect LABS password arm12345
 ```
 
 ---
+### wifi settings
+```
+auto wlan0
+allow-hotplug wlan0
+iface wlan0 inet dhcp
+wpa-ssid LABS
+wpa-psk 1899ea07044c0cb7dd5b9917f9ccc03bc9023bf785d01aba390bd5021c1347b9
+wpa-scan-ssid 1
+```
+
+---
 ### Troubleshouting 
+
+```
+## /etc/network/interfaces.d/eth0
+auto eth0
+iface eth0 inet dhcp
+auto eth0:1
+iface eth0:1 inet static
+address 192.168.2.99
+netmask 255.255.255.0
+```
+
+
+```
+ipython
+/etc/network/if-up.d/resolved: 12: mystatedir: not found
+```
+
+---
+
 ```
 sudo apt-cache search pydantic
 sudo apt install python3-pydantic
