@@ -49,7 +49,12 @@ PYNQ can be used to create high performance applications with:
 * Github: PYNQ Workshop for v2.6 [[Github]](https://github.com/Xilinx/PYNQ_Workshop)
 * FINN: Fast, Scalable Quantized Neural Network Inference on FPGAs [[Github]](https://github.com/Xilinx/finn)
 
-#### Developer Contest
+---
+#### AMD Events
+* AMD Advancing AI 2026 | San Francisco, July 22-23 [[AMD]](https://www.amd.com/en/corporate/events/advancing-ai.html)
+* AMD Advancing AI 2025 [[AMD]](https://www.amd.com/en/corporate/events/advancing-ai/2025/advancing-ai-2025.html)
+
+#### AMD Developer Contest
 * AMD Pervasive AI Developer Contest [[Github]](https://github.com/iotengineer22/AMD-Pervasive-AI-Developer-Contest)
 * 2024 AMD Pervasive AI Developer Contest  [[AMD]](https://www.amd.com/en/developer/resources/2024-pervasive-ai-developer-contest-winners.html)
 * 2023 AMD Pervasive AI Developer Contest [[pynq.io]](https://discuss.pynq.io/t/participation-in-amd-pervasive-ai-developer-contest/6556 )
